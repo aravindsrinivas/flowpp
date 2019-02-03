@@ -8,10 +8,6 @@ This repository contains code for reproducing the results in the paper Flow++: I
 * Tensorflow v1.10.1 
 * horovod v0.14.1
 
-# Data 
-
-To be updated
-
 # Usage 
 
 To be updated
