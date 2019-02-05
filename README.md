@@ -20,7 +20,8 @@ mpiexec -n 8 python -m flows.run_cifar
 ```
 # Imagenet 32
 
-Data: Script to create dataset [here](https://github.com/aravind0706/flowpp/blob/master/flows_imagenet/create_imagenet_benchmark_datasets.py)
+## Data: 
+Script to create dataset [here](https://github.com/aravind0706/flowpp/blob/master/flows_imagenet/create_imagenet_benchmark_datasets.py)
 
 ```
 mpiexec -n 8 -m flows_imagenet.launchers.imagenet32_official
