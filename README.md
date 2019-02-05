@@ -16,7 +16,7 @@ We trained our models using 8 GPUs with data-parallelism using Horovod.
 
 # CIFAR 10 
 ```
-mpiexec -n 8 python -m flows.run_cifar
+mpiexec -n 8 python3.6 -m flows.run_cifar
 ```
 # Imagenet 
 
