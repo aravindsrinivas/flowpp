@@ -6,11 +6,13 @@ This repository contains Tensorflow implementation of experiments from the paper
 
 * python3.6 
 * Tensorflow v1.10.1 
-* horovod v0.14.1
+* [horovod v0.14.1](https://github.com/uber/horovod)
+
+[Horovod GPU setup instructions](https://github.com/uber/horovod/blob/master/docs/gpus.md)
 
 # Usage Instructions
 
-We trained our models using 8 GPUs with data-parallelism. 
+We trained our models using 8 GPUs with data-parallelism using Horovod. 
 
 # CIFAR 10 
 ```
