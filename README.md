@@ -26,6 +26,8 @@ mpiexec -n 8 -m flows_imagenet.launchers.imagenet32_official
 # Imagenet 64
 ```
 mpiexec -n 6 python3.6 -m flows_imagenet.launchers.imagenet64_official
+mpiexec -n 6 python3.6 -m flows_imagenet.launchers.imagenet64_5bit_official
+
 ```
 # CelebA-HQ 64x64 
 
@@ -33,6 +35,8 @@ Data: Download links in [README](https://github.com/aravind0706/flowpp/tree/mast
 
 ```
 mpiexec -n 8 python3.6 -m flows_celeba.launchers.celeba64_5bit_official
+mpiexec -n 8 python3.6 -m flows_celeba.launchers.celeba64_3bit_official
+
 ```
 # Contact
 
