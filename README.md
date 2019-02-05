@@ -18,15 +18,17 @@ We trained our models using 8 GPUs with data-parallelism using Horovod.
 ```
 mpiexec -n 8 python -m flows.run_cifar
 ```
-# Imagenet 32
+# Imagenet 
 
-## Data: 
+## Data for Imagenet Experiments: 
 Script to create dataset [here](https://github.com/aravind0706/flowpp/blob/master/flows_imagenet/create_imagenet_benchmark_datasets.py)
+
+## Imagenet 32x32
 
 ```
 mpiexec -n 8 -m flows_imagenet.launchers.imagenet32_official
 ```
-# Imagenet 64
+# Imagenet 64x64
 ```
 mpiexec -n 6 python3.6 -m flows_imagenet.launchers.imagenet64_official
 mpiexec -n 6 python3.6 -m flows_imagenet.launchers.imagenet64_5bit_official
@@ -34,7 +36,8 @@ mpiexec -n 6 python3.6 -m flows_imagenet.launchers.imagenet64_5bit_official
 ```
 # CelebA-HQ 64x64 
 
-Data: Download links in [README](https://github.com/aravind0706/flowpp/tree/master/flows_celeba)
+## Data: 
+Download links in [README](https://github.com/aravind0706/flowpp/tree/master/flows_celeba)
 
 ```
 mpiexec -n 8 python3.6 -m flows_celeba.launchers.celeba64_5bit_official
