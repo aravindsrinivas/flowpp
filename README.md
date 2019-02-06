@@ -1,6 +1,6 @@
 # Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design 
 
-This repository contains Tensorflow implementation of experiments from the paper [Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design - Jonathan Ho*, Xi Chen*, Aravind Srinivas, Yan Duan, Pieter Abbeel](https://arxiv.org/abs/1902.00275)
+This repository contains Tensorflow implementation of experiments from the paper [Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design](https://arxiv.org/abs/1902.00275) - [Jonathan Ho](http://www.jonathanho.me/)*, [Xi Chen](http://peterchen.io/)*, [Aravind Srinivas](https://people.eecs.berkeley.edu/~aravind/), [Yan Duan](http://rockyduan.com/), [Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/)
 
 # Dependencies
 
