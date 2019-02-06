@@ -26,7 +26,7 @@ Script to create dataset [here](https://github.com/aravind0706/flowpp/blob/maste
 ## Imagenet 32x32
 
 ```
-mpiexec -n 8 -m flows_imagenet.launchers.imagenet32_official
+mpiexec -n 8 python3.6 -m flows_imagenet.launchers.imagenet32_official
 ```
 # Imagenet 64x64
 ```
