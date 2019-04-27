@@ -410,6 +410,8 @@ class MixLogisticCoupling(Flow):
         s, t, ml_logits, ml_means, ml_logscales = self.template(
             cf, init=init, ema=ema, dropout_p=dropout_p, verbose=verbose, context=context
         )
+        my_cast = lambda m: tf.cast(m, tf.float64) if len(m.shape) > 0 else m
+        s,t,ml_logits, ml_means, ml_logscales, float_ef = map(my_cast, [s,t,ml_logits, ml_means, ml_logscales, float_ef])
 
         out = tf.exp(
             mixlogistic_logcdf(x=float_ef, prior_logits=ml_logits, means=ml_means, logscales=ml_logscales)
@@ -527,6 +529,8 @@ class MixLogisticAttnCoupling(Flow):
         s, t, ml_logits, ml_means, ml_logscales = self.template(
             cf, init=init, ema=ema, dropout_p=dropout_p, verbose=verbose, context=context
         )
+        my_cast = lambda m: tf.cast(m, tf.float64) if len(m.shape) > 0 else m
+        s,t,ml_logits, ml_means, ml_logscales, float_ef = map(my_cast, [s,t,ml_logits, ml_means, ml_logscales, float_ef])
 
         out = tf.exp(
             mixlogistic_logcdf(x=float_ef, prior_logits=ml_logits, means=ml_means, logscales=ml_logscales)
